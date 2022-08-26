@@ -17,6 +17,20 @@ pipeline {
         }
       }
     }
+    stage('Stage 3') {
+      steps {
+        script {
+          echo 'Stage 3'
+        }
+      } 
+    }
+    stage(Stage 4') {
+        steps {
+            script {
+                echo 'Stage 4'
+            }
+        }
+    }
 
   }
 }
