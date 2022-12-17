@@ -1,9 +1,11 @@
-pipeline{
-  agent any
+node{
   stage('scm checkout'){
     git 'https://github.com/vsknalli/first-app/'
   }
-  stage(Compile-Package){
+  stage('Compile-package'){
     sh 'mvn package'
   }
+
 }
+  
+  
