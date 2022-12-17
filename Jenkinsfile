@@ -4,7 +4,7 @@ pipeline {
     stage('Stage 1-FETCH CODE FROM GIT') {
       steps {
         script {
-          sh 'https://github.com/vsknalli/first-app/'
+          git 'https://github.com/vsknalli/first-app/'
         }
 
       }
