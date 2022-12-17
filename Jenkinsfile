@@ -3,19 +3,19 @@
 pipeline {
   agent any
   stages {
-    stage('Stage 1') {
+    stage('Stage 1-FETCH CODE FROM GIT') {
       steps {
         script {
-          echo 'Stage 1'
+          sh 'https://github.com/vsknalli/first-app/'
         }
 
       }
     }
 
-    stage('Stage 2') {
+    stage('Compile MVN package') {
       steps {
         script {
-          echo 'Stage 2'
+          sh 'mvn package'
         }
 
       }
